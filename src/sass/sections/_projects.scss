@@ -2,20 +2,26 @@
   background-color: $white-color;
   color: $dark-blue-text;
   margin-top: -10rem;
+  margin-bottom: 15rem;
   padding-top: 15rem;
-  
+  display: flex; 
+   
 
-  @include respond(tab-land) {
+  @include respond(tab-port) {
     margin-top: 0;
     padding-top: 5rem;
   }
 
   .project-wrapper {
     margin-bottom: 15rem;
+    margin: 1rem;
+    padding: 1rem;
     display: flex;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       margin-bottom: 0rem;
+      display: flex;
+      flex-direction: column;
     }
 
     .row {
